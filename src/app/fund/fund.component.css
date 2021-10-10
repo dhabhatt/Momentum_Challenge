@@ -1,0 +1,49 @@
+
+  .example-form-field {
+    margin: 0 8px 16px 0;
+  }
+
+  .mat-grid-tile-content{
+    justify-content: flex-start !important ;
+    align-items: flex-start !important;
+ }
+
+ .top_data_box{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .top_data_box div{
+    width: 50%;
+ }
+
+ ::ng-deep .mat-expansion-panel-body{
+    padding: 0 !important;
+}
+
+::ng-deep .mat-expansion-panel-header-description, ::ng-deep .mat-expansion-indicator::after {
+    color: rgb(255 255 255 / 100%);
+}
+
+ .mat-expansion-panel-header{
+    background-color: #052950;
+ }
+
+ .mat-expansion-panel-header.mat-expanded {
+    height: 48px;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+ .mat-expansion-panel-header-title {
+    color: rgb(253 253 253 / 87%);
+}
+
+ .mat-expansion-panel-header:focus, .mat-expansion-panel-header:hover {
+    outline: none;
+    background-color: #052950 !important;
+}
+
+ .mr-2{
+   margin-right: 15px;
+ }

@@ -1,0 +1,35 @@
+
+  <mat-sidenav-container class="manu-container" autosize>
+    <mat-sidenav #sidenav class="manu-sidenav" mode="side" opened="true">
+      <span mat-icon (click)="isExpanded = !isExpanded" class="menu-arr-icon">
+        <mat-icon class="menu-button" [ngClass]="{'rotated' : isExpanded}"
+          >expand_more</mat-icon>
+      </span>
+  
+      <mat-nav-list>
+        <mat-list-item routerLink="/dashboard" routerLinkActive="active" (click)="showSubmenu = !showSubmenu" class="parent">
+          <span> <img src="../../assets/img/dashboard_icon-white-24px.svg" alt=""> </span>
+          <span class="full-width" *ngIf="isExpanded || isShowing" > Dashboard </span >
+        </mat-list-item>
+        <mat-list-item routerLink="/fund" routerLinkActive="active" (click)="showSubmenu = !showSubmenu" class="parent">
+            <span> <img src="../../assets/img/Fund_CCY_Date_icon-white-24dp.svg" alt=""> </span>
+            <span class="full-width" *ngIf="isExpanded || isShowing" > Fund </span >
+          </mat-list-item>
+          <mat-list-item routerLink="/summery" routerLinkActive="active" (click)="showSubmenu = !showSubmenu" class="parent">
+            <span> <img src="../../assets/img/summary_by_fund-white-24px.svg" alt=""> </span>
+            <span class="full-width" *ngIf="isExpanded || isShowing" > Summary by Fund </span >
+          </mat-list-item>
+          <mat-list-item routerLink="/view" routerLinkActive="active" (click)="showSubmenu = !showSubmenu" class="parent">
+            <span> <img src="../../assets/img/custom_view-white-24dp.svg" alt=""> </span>
+            <span class="full-width" *ngIf="isExpanded || isShowing" > Custom View </span >
+          </mat-list-item>
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <div class="manu-sidenav-content"> <router-outlet></router-outlet> </div>
+  </mat-sidenav-container>
+  
+  <!-- Copyright 2017 Google Inc. All Rights Reserved.
+      Use of this source code is governed by an MIT-style license that
+      can be found in the LICENSE file at http://angular.io/license -->
+  

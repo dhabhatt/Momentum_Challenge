@@ -1,0 +1,84 @@
+.manu-container {
+    height: 560px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    border: none;
+  }
+
+
+  .active{
+    background: rgb(5,41,80);
+    background: linear-gradient(90deg, rgba(9,75,104,1) 60%, rgba(16,126,138,1) 100%); 
+  }
+
+
+  .mat-drawer-container {
+    position: relative !important;
+    display: block;
+    overflow: auto;
+    top: -15px !important;
+    padding: 0px 10px 0px 15px !important;
+}
+
+.manu-sidenav-content {
+  padding: 0px 10px 0px 15px !important;
+}
+
+
+  .manu-sidenav {
+    user-select: none;
+    background: rgb(5,41,80);
+    color: white;
+    border: 2px solid white;
+    overflow: hidden;
+    box-shadow: 0px 5px 8px 0px #a59e9e;
+    /* background: linear-gradient(90deg, rgba(5,41,80,1) 30%, rgba(9,75,104,1) 80%, rgba(16,126,138,1) 100%); */
+  }
+  .full-width {
+    width: 100%;
+    color: white;
+    font-weight: 400;
+    padding-left: 15px;
+  }
+  .menu-button {
+    transition: 300ms ease-in-out;
+    transform: rotate(90deg);
+  }
+  .menu-button.rotated {
+    transform: rotate(270deg);
+  }
+  
+  .submenu {
+    overflow-y: hidden;
+    transition: transform 300ms ease;
+    transform: scaleY(0);
+    transform-origin: top;
+    padding-left: 30px;
+  }
+  .submenu.expanded {
+    transform: scaleY(1);
+  }
+  
+
+  .mat-icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    height: 40px;
+    width: 40px;
+    font-size: 40px;
+}
+
+span.menu-arr-icon {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-top: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+

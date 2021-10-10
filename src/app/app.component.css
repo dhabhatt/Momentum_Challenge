@@ -1,0 +1,20 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .header{
+    height: 90px;
+    background: rgb(5,41,80);
+    background: linear-gradient(90deg, rgba(5,41,80,1) 30%, rgba(9,75,104,1) 80%, rgba(16,126,138,1) 100%);
+  }
+
+  .logo-text{
+    color: white;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    display: inline;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+  }
